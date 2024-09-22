@@ -1,19 +1,482 @@
-[15:27:57] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.16.5
-[15:27:57] [ForkJoinPool-1-worker-6/WARN]: Mod com_github_rtyley_animated-gif-lib-for-java uses the version animated-gif-lib-1.7 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'animated'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[15:27:57] [ForkJoinPool-1-worker-7/WARN]: Mod tectonic uses the version 2.4.1b which isn't compatible with Loader's extended semantic version format (Could not parse version number component '1b'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
-[15:27:57] [main/INFO]: Dependencies overridden for minecraft, lambdynlights, fabricloader, debugify
-[15:27:57] [main/WARN]: Mod resolution failed
-[15:27:57] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE refurbished_furniture 1.0.6 {depends framework @ [>=0.7.6]}, ROOT_FORCELOAD_SINGLE refurbished_furniture 1.0.6]
-[15:27:57] [main/INFO]: Reason: [HARD_DEP refurbished_furniture 1.0.6 {depends framework @ [>=0.7.6]}]
-[15:27:57] [main/INFO]: Fix: add [], remove [], replace [[framework 0.6.16] -> add:framework 0.7.6 ([[0.7.6,?)])]
-[15:27:57] [main/ERROR]: Incompatible mods found!
-net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
-A potential solution has been determined, this may resolve your problem:
-	 - Replace mod 'Framework' (framework) 0.6.16 with version 0.7.6 or later.
-More details:
-	 - Mod 'MrCrayfish's Furniture Mod: Refurbished' (refurbished_furniture) 1.0.6 requires version 0.7.6 or later of mod 'Framework' (framework), but only the wrong version is present: 0.6.16!
-	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.5.jar:?]
-	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.5.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.5.jar:?]
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) ~[fabric-loader-0.16.5.jar:?]
+[15:33:29] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.16.5
+[15:33:29] [ForkJoinPool-1-worker-12/WARN]: Mod com_github_rtyley_animated-gif-lib-for-java uses the version animated-gif-lib-1.7 which isn't compatible with Loader's extended semantic version format (Could not parse version number component 'animated'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[15:33:29] [ForkJoinPool-1-worker-8/WARN]: Mod tectonic uses the version 2.4.1b which isn't compatible with Loader's extended semantic version format (Could not parse version number component '1b'!), SemVer is recommended for reliably evaluating dependencies and prioritizing newer version
+[15:33:30] [main/INFO]: Dependencies overridden for minecraft, lambdynlights, fabricloader, debugify
+[15:33:30] [main/WARN]: Warnings were found!
+ - 'Minecraft' (minecraft) 1.20.1 recommends any version after 5.4.1 of Fabulously Optimized, which is missing!
+	 - You should install any version after 5.4.1 of Fabulously Optimized for the optimal experience.
+[15:33:30] [main/INFO]: Loading 228 mods:
+	- advancementinfo 1.20-fabric0.83.0-1.4
+	- animatica 0.6+1.20
+	- appleskin 2.5.1+mc1.20
+	- backpacked 2.2.7
+	- backpacked-world-of-color 1.0.0-fabric
+	   |-- cardinal-components-base 5.2.2
+	   \-- cardinal-components-entity 5.2.2
+	- balm-fabric 7.3.9
+	   \-- kuma_api 20.1.8
+	- bclib 3.0.14
+	   \-- wunderlib 1.1.5
+	- betterend 4.0.11
+	- bettermounthud 1.2.2
+	- betternether 9.0.10
+	- bookshelf 20.2.13
+	- borderlessmining 1.1.8+1.20.1
+	- capes 1.5.2+1.20
+	- citresewn 1.1.3+1.20
+	   \-- citresewn-defaults 1.1.3+1.20
+	- cloth-config 11.1.106
+	   \-- cloth-basic-math 0.6.1
+	- continuity 3.0.0-beta.4+1.20.1
+	- controlify 1.6.0+1.20
+	   |-- dev_isxander_sdl2-jni 2.28.2-26
+	   |-- org_hid4java_hid4java 0.7.0
+	   \-- org_quiltmc_quilt-json5 1.0.3
+	- create 0.5.1-f-build.1417+mc1.20.1
+	   |-- com_electronwill_night-config_core 3.6.6
+	   |-- com_electronwill_night-config_toml 3.6.6
+	   |-- com_google_code_findbugs_jsr305 3.0.2
+	   |-- flywheel 0.6.10-2
+	   |-- forgeconfigapiport 8.0.0
+	   |-- milk 1.2.60
+	   |    \-- dripstone_fluid_lib 3.0.2
+	   |-- porting_lib_tags 3.0
+	   |-- reach-entity-attributes 2.4.0
+	   \-- registrate-fabric 1.3.62-MC1.20.1
+	- debugify 1.20.1+2.0
+	- dynamic_fps 3.2.1
+	- e4mc_minecraft 4.0.1
+	- enchdesc 17.1.18
+	- enhancedblockentities 0.9+1.20
+	   |-- advanced_runtime_resource_pack 0.6.7
+	   \-- spruceui 5.0.0+1.20
+	- entity_model_features 1.0.2
+	- entity_texture_features 4.5.1
+	   \-- org_apache_httpcomponents_httpmime 4.5.10
+	- entityculling 1.6.2-mc1.20.1
+	- fabric-api 0.92.2+1.20.1
+	   |-- fabric-api-base 0.4.31+1802ada577
+	   |-- fabric-api-lookup-api-v1 1.6.36+1802ada577
+	   |-- fabric-biome-api-v1 13.0.13+1802ada577
+	   |-- fabric-block-api-v1 1.0.11+1802ada577
+	   |-- fabric-block-view-api-v2 1.0.1+1802ada577
+	   |-- fabric-blockrenderlayer-v1 1.1.41+1802ada577
+	   |-- fabric-client-tags-api-v1 1.1.2+1802ada577
+	   |-- fabric-command-api-v1 1.2.34+f71b366f77
+	   |-- fabric-command-api-v2 2.2.13+1802ada577
+	   |-- fabric-commands-v0 0.2.51+df3654b377
+	   |-- fabric-containers-v0 0.1.64+df3654b377
+	   |-- fabric-content-registries-v0 4.0.11+1802ada577
+	   |-- fabric-convention-tags-v1 1.5.5+1802ada577
+	   |-- fabric-crash-report-info-v1 0.2.19+1802ada577
+	   |-- fabric-data-attachment-api-v1 1.0.0+de0fd6d177
+	   |-- fabric-data-generation-api-v1 12.3.4+1802ada577
+	   |-- fabric-dimensions-v1 2.1.54+1802ada577
+	   |-- fabric-entity-events-v1 1.6.0+1c78457f77
+	   |-- fabric-events-interaction-v0 0.6.2+1802ada577
+	   |-- fabric-events-lifecycle-v0 0.2.63+df3654b377
+	   |-- fabric-game-rule-api-v1 1.0.40+1802ada577
+	   |-- fabric-item-api-v1 2.1.28+1802ada577
+	   |-- fabric-item-group-api-v1 4.0.12+1802ada577
+	   |-- fabric-key-binding-api-v1 1.0.37+1802ada577
+	   |-- fabric-keybindings-v0 0.2.35+df3654b377
+	   |-- fabric-lifecycle-events-v1 2.2.22+1802ada577
+	   |-- fabric-loot-api-v2 1.2.1+1802ada577
+	   |-- fabric-loot-tables-v1 1.1.45+9e7660c677
+	   |-- fabric-message-api-v1 5.1.9+1802ada577
+	   |-- fabric-mining-level-api-v1 2.1.50+1802ada577
+	   |-- fabric-model-loading-api-v1 1.0.3+1802ada577
+	   |-- fabric-models-v0 0.4.2+9386d8a777
+	   |-- fabric-networking-api-v1 1.3.11+1802ada577
+	   |-- fabric-networking-v0 0.3.51+df3654b377
+	   |-- fabric-object-builder-api-v1 11.1.3+1802ada577
+	   |-- fabric-particles-v1 1.1.2+1802ada577
+	   |-- fabric-recipe-api-v1 1.0.21+1802ada577
+	   |-- fabric-registry-sync-v0 2.3.3+1802ada577
+	   |-- fabric-renderer-api-v1 3.2.1+1802ada577
+	   |-- fabric-renderer-indigo 1.5.2+85287f9f77
+	   |-- fabric-renderer-registries-v1 3.2.46+df3654b377
+	   |-- fabric-rendering-data-attachment-v1 0.3.37+92a0d36777
+	   |-- fabric-rendering-fluids-v1 3.0.28+1802ada577
+	   |-- fabric-rendering-v0 1.1.49+df3654b377
+	   |-- fabric-rendering-v1 3.0.8+1802ada577
+	   |-- fabric-resource-conditions-api-v1 2.3.8+1802ada577
+	   |-- fabric-resource-loader-v0 0.11.10+1802ada577
+	   |-- fabric-screen-api-v1 2.0.8+1802ada577
+	   |-- fabric-screen-handler-api-v1 1.3.30+1802ada577
+	   |-- fabric-sound-api-v1 1.0.13+1802ada577
+	   |-- fabric-transfer-api-v1 3.3.5+8dd72ea377
+	   \-- fabric-transitive-access-wideners-v1 4.3.1+1802ada577
+	- fabric-language-kotlin 1.10.10+kotlin.1.9.10
+	   |-- org_jetbrains_kotlin_kotlin-reflect 1.9.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib 1.9.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk7 1.9.10
+	   |-- org_jetbrains_kotlin_kotlin-stdlib-jdk8 1.9.10
+	   |-- org_jetbrains_kotlinx_atomicfu-jvm 0.22.0
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm 1.7.3
+	   |-- org_jetbrains_kotlinx_kotlinx-coroutines-jdk8 1.7.3
+	   |-- org_jetbrains_kotlinx_kotlinx-datetime-jvm 0.4.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm 1.6.0
+	   |-- org_jetbrains_kotlinx_kotlinx-serialization-core-jvm 1.6.0
+	   \-- org_jetbrains_kotlinx_kotlinx-serialization-json-jvm 1.6.0
+	- fabricloader 0.16.5
+	   \-- mixinextras 0.4.1
+	- fabricskyboxes 0.7.3+mc1.20.1
+	- fabrishot 1.10.0
+	- fadeless 1.0.1
+	- fancymenu 3.2.3
+	   |-- com_github_keksuccino_japng 0.5.3
+	   \-- com_github_rtyley_animated-gif-lib-for-java animated-gif-lib-1.7
+	- fastquit 3.0.0+1.20+
+	- ferritecore 6.0.0
+	- fmsia 1.0.1
+	- framework 0.7.8
+	   |-- com_electronwill_night-config_core 3.6.6
+	   |-- com_electronwill_night-config_toml 3.6.6
+	   |-- org_javassist_javassist 3.29.2-GA
+	   \-- org_reflections_reflections 0.10.2
+	- fsb-interop 1.3.6+mc1.20.1-build.50
+	- immediatelyfast 1.2.6+1.20.2
+	   \-- net_lenni0451_reflect 1.2.4
+	- indium 1.0.27+mc1.20.1
+	- iris 1.6.10
+	   |-- io_github_douira_glsl-transformer 2.0.0-pre13
+	   |-- org_anarres_jcpp 1.4.14
+	   \-- org_antlr_antlr4-runtime 4.11.1
+	- isxander-main-menu-credits 1.1.2
+	- java 17
+	- konkrete 1.8.1
+	- lambdynlights 2.3.2+1.20.1
+	   |-- pride 1.2.0+1.19.4
+	   \-- spruceui 5.0.0+1.20
+	- languagereload 1.5.9+1.20.1
+	- lithium 0.11.2
+	- melody 1.0.3
+	- memoryleakfix 1.1.2
+	- minecraft 1.20.1
+	- mixintrace 1.1.1+1.17
+	- modelfix 1.14
+	- modernfix 5.8.1+mc1.20.1
+	- modmenu 7.2.2
+	- morechathistory 1.1.1
+	- moreculling 1.20.1-0.19.0
+	   \-- conditional-mixin 0.3.2
+	- nochatreports 1.20.1-v2.2.2
+	- notenoughanimations 1.7.6
+	- optigui 2.1.5
+	   |-- optiglue 2.1.5-mc.1.19.3
+	   |-- org_apache_commons_commons-text 1.10.0
+	   \-- org_ini4j_ini4j 0.5.4
+	- panoramics 1.0.1
+	- porting_lib 2.3.4+1.20.1
+	   |-- com_electronwill_night-config_core 3.6.6
+	   |-- com_electronwill_night-config_toml 3.6.6
+	   |-- porting_lib_accessors 2.3.4+1.20.1
+	   |-- porting_lib_asm 2.3.4+1.20.1
+	   |-- porting_lib_attributes 2.3.4+1.20.1
+	   |-- porting_lib_base 2.3.4+1.20.1
+	   |-- porting_lib_blocks 2.3.4+1.20.1
+	   |-- porting_lib_brewing 2.3.4+1.20.1
+	   |-- porting_lib_chunk_loading 2.3.4+1.20.1
+	   |-- porting_lib_client_events 2.3.4+1.20.1
+	   |-- porting_lib_common 2.3.4+1.20.1
+	   |-- porting_lib_config 2.3.4+1.20.1
+	   |-- porting_lib_core 2.3.4+1.20.1
+	   |-- porting_lib_data 2.3.4+1.20.1
+	   |-- porting_lib_entity 2.3.4+1.20.1
+	   |-- porting_lib_extensions 2.3.4+1.20.1
+	   |-- porting_lib_fluids 2.3.4+1.20.1
+	   |-- porting_lib_gametest 2.3.4+1.20.1
+	   |-- porting_lib_gui_utils 2.3.4+1.20.1
+	   |-- porting_lib_items 2.3.4+1.20.1
+	   |-- porting_lib_lazy_registration 2.3.4+1.20.1
+	   |-- porting_lib_level_events 2.3.4+1.20.1
+	   |-- porting_lib_loot 2.3.4+1.20.1
+	   |-- porting_lib_mixin_extensions 2.3.4+1.20.1
+	   |-- porting_lib_model_builders 2.3.4+1.20.1
+	   |-- porting_lib_model_generators 2.3.4+1.20.1
+	   |-- porting_lib_model_loader 2.3.4+1.20.1
+	   |-- porting_lib_model_materials 2.3.4+1.20.1
+	   |-- porting_lib_models 2.3.4+1.20.1
+	   |-- porting_lib_networking 2.3.4+1.20.1
+	   |-- porting_lib_obj_loader 2.3.4+1.20.1
+	   |-- porting_lib_recipe_book_categories 2.3.4+1.20.1
+	   |-- porting_lib_registries 2.3.4+1.20.1
+	   |-- porting_lib_tool_actions 2.3.4+1.20.1
+	   |-- porting_lib_transfer 2.3.4+1.20.1
+	   |-- porting_lib_utility 2.3.4+1.20.1
+	   \-- reach-entity-attributes 2.4.0
+	- puzzle 1.5.2+1.20
+	   |-- midnightlib 1.4.1
+	   |-- puzzle-base 1.5.2+1.20
+	   |-- puzzle-gui 1.5.2+1.20
+	   |-- puzzle-models 1.5.2+1.20
+	   \-- puzzle-splashscreen 1.5.2+1.20
+	- reeses-sodium-options 1.6.5+mc1.20.1-build.95
+	- refurbished_furniture 1.0.6
+	- skinlayers3d 1.6.7
+	- sodium 0.5.3
+	- sodium-extra 0.5.1+mc1.20.1-build.112
+	   |-- caffeineconfig 1.3.0+1.17
+	   \-- crowdin-translate 1.4+1.19.3
+	- sspb 3.4.0
+	- tectonic 2.4.1b
+	- terralith 2.5.4
+	- voicechat 1.20.1-2.5.22
+	- waystones 14.1.5
+	- xaerominimap 24.4.0
+	- xaeroworldmap 1.39.0
+	- yet_another_config_lib_v3 3.2.1+1.20
+	   |-- com_twelvemonkeys_common_common-image 3.10.0-SNAPSHOT
+	   |-- com_twelvemonkeys_common_common-io 3.10.0-SNAPSHOT
+	   |-- com_twelvemonkeys_common_common-lang 3.10.0-SNAPSHOT
+	   |-- com_twelvemonkeys_imageio_imageio-core 3.10.0-SNAPSHOT
+	   |-- com_twelvemonkeys_imageio_imageio-metadata 3.10.0-SNAPSHOT
+	   |-- com_twelvemonkeys_imageio_imageio-webp 3.10.0-SNAPSHOT
+	   |-- org_quiltmc_parsers_gson 0.2.1
+	   \-- org_quiltmc_parsers_json 0.2.1
+	- yosbr 0.1.2
+	- zoomify 2.11.2
+	   |-- com_akuleshov7_ktoml-core-jvm 0.4.1
+	   |-- dev_isxander_settxi_settxi-core 2.10.6
+	   \-- dev_isxander_settxi_settxi-kotlinx-serialization 2.10.6
+[15:33:30] [main/WARN]: Found 2 non-fabric mods:
+	- backpackedpatch-0.1-1.20.1.jar
+	- Steam_Rails-1.6.5+forge-mc1.20.1.jar
+[15:33:30] [main/INFO]: Applying default options... (YOSBR)
+[15:33:30] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/bella/AppData/Roaming/.minecraft/libraries/net/fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[15:33:30] [main/INFO]: Compatibility level set to JAVA_16
+[15:33:30] [main/INFO]: Compatibility level set to JAVA_17
+[15:33:30] [main/INFO]: Preloading Debugify
+[15:33:30] [main/WARN]: Reference map 'entity_model_features_fabric_1.20-fabric-refmap.json' for entity_model_features.mixins.json could not be read. If this is a development environment you can ignore this message
+[15:33:30] [main/INFO]: Loaded configuration file for Lithium: 115 options available, 1 override(s) found
+[15:33:30] [main/INFO]: Loaded configuration file for ModernFix 5.8.1+mc1.20.1: 52 options available, 1 override(s) found
+[15:33:30] [main/WARN]: Option 'mixin.perf.dynamic_resources' overriden (by user configuration) to 'true'
+[15:33:30] [main/INFO]: Applying Nashorn fix
+[15:33:30] [main/INFO]: Loaded configuration file for Sodium: 41 options available, 3 override(s) found
+[15:33:31] [main/INFO]: Loaded configuration file for Sodium Extra: 32 options available, 0 override(s) found
+[15:33:31] [main/WARN]: Error loading class: io/vram/frex/base/renderer/context/render/EntityBlockRenderContext (java.lang.ClassNotFoundException: io/vram/frex/base/renderer/context/render/EntityBlockRenderContext)
+[15:33:31] [main/WARN]: @Mixin target io.vram.frex.base.renderer.context.render.EntityBlockRenderContext was not found porting_lib_base.mixins.json:client.frex.EntityBlockRenderContextMixin from mod porting_lib_base
+[15:33:31] [main/WARN]: Force disabled MC-121772 because it only applies to OS: MAC
+[15:33:31] [main/WARN]: Force disabled MC-122477 because it only applies to OS: LINUX
+[15:33:31] [main/WARN]: Force disabled MC-59810 because it only applies to OS: MAC
+[15:33:31] [main/WARN]: Force-disabling mixin 'alloc.blockstate.StateMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
+[15:33:31] [main/WARN]: Error loading class: net/fabricmc/fabric/impl/client/model/ModelLoadingRegistryImpl$LoaderInstance (java.lang.ClassNotFoundException: net/fabricmc/fabric/impl/client/model/ModelLoadingRegistryImpl$LoaderInstance)
+[15:33:31] [main/WARN]: @Mixin target net.fabricmc.fabric.impl.client.model.ModelLoadingRegistryImpl$LoaderInstance was not found modernfix-fabric.mixins.json:perf.dynamic_resources.LoaderInstanceMixin from mod modernfix
+[15:33:31] [main/WARN]: Error loading class: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache (java.lang.ClassNotFoundException: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache)
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.entity.CuboidMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.entity.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.entity.cull.EntityRendererMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.entity.shadows.EntityRenderDispatcherMixin' as rule 'mixin.features.render.entity' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.gui.font.GlyphRendererMixin' as rule 'mixin.features.render.gui.font' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.world.sky.BackgroundRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.world.sky.ClientWorldMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[15:33:31] [main/WARN]: Force-disabling mixin 'features.render.world.sky.WorldRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[15:33:31] [main/INFO]: [SSPB] Indium detected. Option to toggle vanilla path block lighting is enabled
+[15:33:31] [main/INFO]: [MemoryLeakFix] Will be applying 3 memory leak fixes!
+[15:33:31] [main/INFO]: [MemoryLeakFix] Currently enabled memory leak fixes: [targetEntityLeak, biomeTemperatureLeak, hugeScreenshotLeak]
+[15:33:31] [main/WARN]: Error loading class: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache (java.lang.ClassNotFoundException: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache)
+[15:33:31] [main/WARN]: Error loading class: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache (java.lang.ClassNotFoundException: me/jellysquid/mods/sodium/client/render/occlusion/BlockOcclusionCache)
+[15:33:31] [main/WARN]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org/jetbrains/annotations/ApiStatus$Internal)
+[15:33:31] [main/INFO]: I used the json to destroy the json
+[15:33:31] [main/INFO]: Searching for graphics cards...
+[15:33:31] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[15:33:32] [main/INFO]: Found graphics card: GraphicsAdapterInfo[vendor=AMD, name=AMD Radeon(TM) Graphics, version=DriverVersion=32.0.11021.1011]
+[15:33:32] [main/INFO]: Found graphics card: GraphicsAdapterInfo[vendor=AMD, name=AMD Radeon RX 6600, version=DriverVersion=32.0.11021.1011]
+[15:33:32] [main/WARN]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[15:33:33] [main/INFO]: Mixing common.MixinFriendlyByteBuf from mixins/common/nochatreports.mixins.json into net.minecraft.class_2540
+[15:33:33] [main/INFO]: Renaming synthetic method lambda$onWriteJsonWithCodec$1(Ljava/lang/Object;Ljava/lang/String;)Lio/netty/handler/codec/EncoderException; to md2abbbe$nochatreports$lambda$onWriteJsonWithCodec$1$0 in mixins/common/nochatreports.mixins.json:common.MixinFriendlyByteBuf from mod nochatreports
+[15:33:33] [main/INFO]: Renaming synthetic method lambda$onReadJsonWithCodec$0(Ljava/lang/String;)Lio/netty/handler/codec/DecoderException; to md2abbbe$nochatreports$lambda$onReadJsonWithCodec$0$1 in mixins/common/nochatreports.mixins.json:common.MixinFriendlyByteBuf from mod nochatreports
+[15:33:33] [main/WARN]: @Inject(@At("INVOKE")) Shift.BY=2 on porting_lib_entity.mixins.json:common.LivingEntityMixin from mod porting_lib_entity::handler$eok000$porting_lib_entity$port_lib$onFinishUsing exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[15:33:33] [main/INFO]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from me.jellysquid.mods.lithium.mixin.ai.pathing.AbstractBlockStateMixin
+[15:33:33] [main/INFO]: Injecting BlockStateBase cache population hook into getPathNodeType from me.jellysquid.mods.lithium.mixin.ai.pathing.AbstractBlockStateMixin
+[15:33:33] [main/INFO]: Injecting BlockStateBase cache population hook into getAllFlags from me.jellysquid.mods.lithium.mixin.util.block_tracking.AbstractBlockStateMixin
+[15:33:34] [main/WARN]: @Inject(@At("INVOKE_ASSIGN")) Shift.BY=2 on refurbished_furniture.common.mixins.json:LevelChunkMixin from mod refurbished_furniture::handler$feg000$refurbished_furniture$refurbishedFurniture$AfterRemoveBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[15:33:35] [main/INFO]: Mixing server.MixinServerGamePacketListenerImpl from mixins/common/nochatreports.mixins.json into net.minecraft.class_3244
+[15:33:35] [main/WARN]: Method overwrite conflict for method_21740 in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin from mod modernfix, previously written by me.jellysquid.mods.lithium.mixin.world.temperature_cache.BiomeMixin. Skipping method.
+[15:33:36] [main/INFO]: Vanilla bootstrap took 2939 milliseconds
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.main to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.generator to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.blocks to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.items to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.biomes to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.mobs to auto sync (file hash)
+[15:33:36] [main/INFO]: [bclib] Added Config betternether.recipes to auto sync (file hash)
+[15:33:36] [main/WARN]: [bclib] Recipe betternether:bone_block_bone_button only takes in a single item and should be shapeless
+[15:33:36] [Render thread/INFO]: Mixing client.MixinMinecraft from mixins/common/nochatreports.mixins.json into net.minecraft.class_310
+[15:33:36] [Render thread/INFO]: Mixing client.MixinMinecraft from mixins/fabric/nochatreports-fabric.mixins.json into net.minecraft.class_310
+[15:33:36] [Render thread/INFO]: Mixing client.MixinTitleScreen from mixins/common/nochatreports.mixins.json into net.minecraft.class_442
+[15:33:37] [Render thread/INFO]: Mixing client.MixinChatScreen from mixins/common/nochatreports.mixins.json into net.minecraft.class_408
+[15:33:37] [Render thread/INFO]: Renaming synthetic method lambda$onInit$4()Lnet/minecraft/class_2561; to md2abbbe$nochatreports$lambda$onInit$4$3 in mixins/common/nochatreports.mixins.json:client.MixinChatScreen from mod nochatreports
+[15:33:37] [Render thread/INFO]: Renaming synthetic method lambda$onInit$3(Lnet/minecraft/class_4185;)V to md2abbbe$nochatreports$lambda$onInit$3$4 in mixins/common/nochatreports.mixins.json:client.MixinChatScreen from mod nochatreports
+[15:33:37] [Render thread/INFO]: Renaming synthetic method lambda$onInit$2()Lnet/minecraft/class_2561; to md2abbbe$nochatreports$lambda$onInit$2$5 in mixins/common/nochatreports.mixins.json:client.MixinChatScreen from mod nochatreports
+[15:33:37] [Render thread/INFO]: Renaming synthetic method lambda$onInit$1(Lnet/minecraft/class_4185;)V to md2abbbe$nochatreports$lambda$onInit$1$6 in mixins/common/nochatreports.mixins.json:client.MixinChatScreen from mod nochatreports
+[15:33:37] [Render thread/INFO]: Renaming synthetic method lambda$onBeforeMessage$0(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lcom/aizistral/nochatreports/common/encryption/Encryptor;)V to md2abbbe$nochatreports$lambda$onBeforeMessage$0$7 in mixins/common/nochatreports.mixins.json:client.MixinChatScreen from mod nochatreports
+[15:33:37] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:33:37] [Render thread/INFO]: Mixing client.MixinYggdrasilUserApiService from mixins/common/nochatreports.mixins.json into com.mojang.authlib.yggdrasil.YggdrasilUserApiService
+[15:33:37] [Render thread/INFO]: Setting user: 91nk_
+[15:33:37] [Render thread/INFO]: Bypassed Mojang DFU
+[15:33:37] [Render thread/INFO]: Mixing client.MixinToastComponent from mixins/common/nochatreports.mixins.json into net.minecraft.class_374
+[15:33:37] [Render thread/INFO]: Reflections took 53 ms to scan 2 urls, producing 9 keys and 101 values
+[15:33:37] [Render thread/INFO]: Mixing client.MixinClientPacketListener from mixins/common/nochatreports.mixins.json into net.minecraft.class_634
+[15:33:37] [Render thread/INFO]: Hello Backpacked: World of Color!
+[15:33:38] [Render thread/INFO]: [bclib] Added Config bclib.generator to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config bclib.main to auto sync (content diff)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config bclib.biomes to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.entities to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.blocks to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.items to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.biomes to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.recipes to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [bclib] Added Config betterend.enchantments to auto sync (file hash)
+[15:33:38] [Render thread/INFO]: [betternether] =^..^=    BetterNether for 1.20    =^..^=
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:pufferfish_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:salmon_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:cod_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:tropical_fish_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:axolotl_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:powder_snow_bucket is now minecraft:bucket.
+[15:33:38] [Render thread/INFO]: Fixing MC-151457. Crafting remainder for minecraft:tadpole_bucket is now minecraft:bucket.
+[15:33:39] [Render thread/INFO]: Saving config because the loaded bug fixes are different to stored json.
+[15:33:39] [Render thread/INFO]: Saving Debugify
+[15:33:39] [Render thread/INFO]: Enabled 11 bug fixes: [MC-577, MC-59810, MC-89146, MC-90683, MC-112730, MC-121772, MC-122477, MC-140646, MC-199467, MC-237493, MC-263865]
+[15:33:39] [Render thread/INFO]: Successfully Debugify'd your game!
+[15:33:39] [Render thread/INFO]: Fadeless is running
+[15:33:39] [Render thread/INFO]: [FANCYMENU] Loading v3.2.3 in client-side mode on FABRIC!
+[15:33:39] [Render thread/INFO]: [KONKRETE] Successfully initialized!
+[15:33:39] [Render thread/INFO]: [KONKRETE] Server-side libs ready to use!
+[15:33:39] [Render thread/INFO]: [MELODY] Loading Melody background audio library..
+[15:33:39] [Render thread/INFO]: KONNICHIWA ZA WARUDO!
+[15:33:39] [Render thread/INFO]: Default JVM text encoding is: windows-1252
+[15:33:39] [Render thread/INFO]: Reading config file NoChatReports/NCR-Common.json...
+[15:33:39] [Render thread/INFO]: Reading config file NoChatReports/NCR-Client.json...
+[15:33:39] [Render thread/INFO]: Reading config file NoChatReports/NCR-ServerPreferences.json...
+[15:33:39] [Render thread/INFO]: Reading config file NoChatReports/NCR-Encryption.json...
+[15:33:40] [Render thread/INFO]: Writing config file NoChatReports/NCR-Common.json...
+[15:33:40] [Render thread/INFO]: Writing config file NoChatReports/NCR-Client.json...
+[15:33:40] [Render thread/INFO]: Writing config file NoChatReports/NCR-ServerPreferences.json...
+[15:33:40] [Render thread/INFO]: Writing config file NoChatReports/NCR-Encryption.json...
+[15:33:40] [Render thread/INFO]: Client initialization...
+[15:33:40] [Render thread/INFO]: Registered synced data key refurbished_furniture:lock_yaw for refurbished_furniture:seat
+[15:33:40] [Render thread/ERROR]: Failed to list path /resourcepacks/terratonic/assets
+java.nio.file.NotDirectoryException: /resourcepacks/terratonic/assets
+	at jdk.nio.zipfs.ZipDirectoryStream.<init>(ZipDirectoryStream.java:58) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipPath.newDirectoryStream(ZipPath.java:755) ~[jdk.zipfs:?]
+	at jdk.nio.zipfs.ZipFileSystemProvider.newDirectoryStream(ZipFileSystemProvider.java:245) ~[jdk.zipfs:?]
+	at java.nio.file.Files.newDirectoryStream(Files.java:482) ~[?:?]
+	at net.minecraft.class_3259.method_14406(class_3259.java:130) ~[client-intermediary.jar:?]
+	at net.minecraft.class_3255.handler$bek000$citresewn$brokenpaths$parseMetadata(class_3255.java:527) ~[client-intermediary.jar:?]
+	at net.minecraft.class_3255.method_14407(class_3255.java:35) ~[client-intermediary.jar:?]
+	at net.minecraft.class_3288.method_45274(class_3288.java:71) ~[client-intermediary.jar:?]
+	at net.minecraft.class_3288.method_45275(class_3288.java:47) ~[client-intermediary.jar:?]
+	at dev.worldgen.tectonic.TectonicFabric.registerPack(TectonicFabric.java:38) ~[tectonic-fabric-1.20.1-2.4.1b.jar:?]
+	at dev.worldgen.tectonic.config.ConfigCodec.enablePacks(ConfigCodec.java:38) ~[tectonic-fabric-1.20.1-2.4.1b.jar:?]
+	at dev.worldgen.tectonic.TectonicFabric.onInitialize(TectonicFabric.java:30) ~[tectonic-fabric-1.20.1-2.4.1b.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.Hooks.startClient(Hooks.java:52) ~[fabric-loader-0.16.5.jar:?]
+	at net.minecraft.class_310.<init>(class_310.java:458) ~[client-intermediary.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:211) ~[fabric-loader-0.16.5-1.20.1.jar:?]
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480) ~[fabric-loader-0.16.5.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74) ~[fabric-loader-0.16.5.jar:?]
 	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.16.5.jar:?]
+[15:33:40] [Render thread/INFO]: [voicechat] Compatibility version 18
+[15:33:40] [Render thread/INFO]: [voicechat] Loading plugins
+[15:33:40] [Render thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[15:33:40] [Render thread/INFO]: [voicechat] Initializing plugins
+[15:33:40] [Render thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[15:33:40] [Render thread/INFO]: AdvancementInfo initialized
+[15:33:40] [Thread-4/INFO]: [bclib] Received Version Info for minecraft=1.20.1, loader=fabric
+[15:33:40] [Thread-4/INFO]: [bclib]  - bclib:3.0.14
+[15:33:40] [Thread-4/INFO]: [bclib]  - betterend:4.0.11
+[15:33:40] [Thread-4/INFO]: [bclib]  - betternether:9.0.10
+[15:33:40] [Render thread/INFO]: Trying to read config file...
+[15:33:40] [Render thread/INFO]: A config file was found, loading it..
+[15:33:40] [Render thread/INFO]: Successfully loaded config file.
+[15:33:40] [Render thread/INFO]: [citresewn] Registering CIT Conditions
+[15:33:40] [Render thread/INFO]: [citresewn] Registering CIT Types
+[15:33:40] [Render thread/INFO]: Pre-initializing Controlify...
+[15:33:40] [Render thread/INFO]: Re-caching descriptions because json doesn't match config.
+[15:33:40] [Render thread/INFO]: Connecting to 'bugs.mojang.com' to cache bug descriptions!
+[15:33:41] [Render thread/INFO]: Loaded config file.
+[15:33:41] [Render thread/INFO]: Saved config file.
+[15:33:41] [Render thread/INFO]: Loading Entity Model Features, now moving all models 0.00001 blocks to the left every 4 seconds.
+[15:33:41] [Render thread/INFO]: Loading Entity Texture Features, your third cousin's, dog's, previous owner's, uncle's, old boss's, fourth favourite mod!
+[15:33:41] [Render thread/INFO]: [Indigo] Different rendering plugin detected; not applying Indigo.
+[15:33:41] [Render thread/INFO]: [FastQuit] Initialized
+[15:33:41] [Render thread/INFO]: Iris detected.
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [Render thread/INFO]: [LambDynLights] Initializing LambDynamicLights...
+[15:33:41] [Render thread/INFO]: [LambDynLights] Configuration loaded.
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [Render thread/INFO]: OptiGlue initialized.
+[15:33:41] [Render thread/INFO]: OptiGUI initialized.
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [Render thread/INFO]: [SSPB] Broken dirt path lighting is best dirt path lighting lol
+[15:33:41] [Render thread/INFO]: [voicechat] Using Cloth Config GUI
+[15:33:41] [Render thread/INFO]: [voicechat] Loading Opus
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [Render thread/INFO]: Loading Xaero's Minimap - Stage 1/2
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [Render thread/INFO]: Loading Xaero's World Map - Stage 1/2
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:41] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:42] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
+[15:33:43] [ForkJoinPool.commonPool-worker-1/ERROR]: Description Cache: 418 - 
