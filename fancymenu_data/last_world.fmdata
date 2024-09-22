@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = true
+  world = 147.185.221.19:22004
+}
+
