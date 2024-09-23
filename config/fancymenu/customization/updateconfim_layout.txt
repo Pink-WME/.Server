@@ -1,0 +1,142 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = updateconfim
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1727132876314
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:9ecbce50-5af8-4437-941d-a59b56b375d3-1727132813857] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  button_element_executable_block_identifier = 133af0f5-3d61-483e-bb62-254983392968-1727130014517
+  [executable_action_instance:35c14594-39e1-48b0-8273-77cbb109412f-1727132500071][action_type:openlink] = https://github.com/Pink-WME/.Server/releases/download/Installer%2FUpdater/Instaler.bat
+  [executable_action_instance:e19fc86c-e05b-40be-a955-27f64ad19c1c-1727132850421][action_type:quitgame] = 
+  [executable_block:133af0f5-3d61-483e-bb62-254983392968-1727130014517][type:generic] = [executables:35c14594-39e1-48b0-8273-77cbb109412f-1727132500071;e19fc86c-e05b-40be-a955-27f64ad19c1c-1727132850421;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Continue To Update
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = e4294465-af61-44fd-9bc4-30a468f89e1c-1727130014517
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -85
+  y = 41
+  width = 170
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 49dd5cb1-eff3-48f1-8152-bd407023e080-1727130014517
+  [loading_requirement_container_meta:49dd5cb1-eff3-48f1-8152-bd407023e080-1727130014517] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = YOU WILL NOT BE ABLE TO USE THE GAME WHEN UPDATING
+  source_mode = direct
+  shadow = true
+  scale = 2.0
+  base_color = #FF0000
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = true
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = 65da6b36-8008-43b9-9b27-69b48711ef8c-1727130228033
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -279
+  y = -100
+  width = 560
+  height = 21
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 86a5f197-e63c-41a3-94a8-528d74390d68-1727130228033
+  [loading_requirement_container_meta:86a5f197-e63c-41a3-94a8-528d74390d68-1727130228033] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = (Though you shouldn't loose any data it is wise to backup any important data)
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #ffffff
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = true
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = 4ed2fdd1-0382-4169-8baf-106983eb4d22-1727130588140
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -198
+  y = -71
+  width = 397
+  height = 14
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 86a5f197-e63c-41a3-94a8-528d74390d68-1727130228033
+  [loading_requirement_container_meta:86a5f197-e63c-41a3-94a8-528d74390d68-1727130228033] = [groups:][instances:]
+}
+

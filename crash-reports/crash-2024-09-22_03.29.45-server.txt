@@ -1,0 +1,221 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2024-09-22 03:29:45
+Description: Exception in server tick loop
+
+java.lang.NoClassDefFoundError: net/luckperms/api/LuckPermsProvider
+	at com.sheath.veinminermod.VeinminerMod.onServerStarted(VeinminerMod.java:69)
+	at net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents.lambda$static$2(ServerLifecycleEvents.java:49)
+	at net.minecraft.server.MinecraftServer.handler$bch000$fabric-lifecycle-events-v1$afterSetupServer(MinecraftServer.java:3842)
+	at net.minecraft.server.MinecraftServer.method_29741(MinecraftServer.java:650)
+	at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.ClassNotFoundException: net.luckperms.api.LuckPermsProvider
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:226)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 6 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 22.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 503478192 bytes (480 MiB) / 1040187392 bytes (992 MiB) up to 10737418240 bytes (10240 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 7600 6-Core Processor              
+	Identifier: AuthenticAMD Family 25 Model 97 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.80
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x164e
+	Graphics card #0 versionInfo: DriverVersion=32.0.11021.1011
+	Graphics card #1 name: AMD Radeon RX 6600
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 4095.00
+	Graphics card #1 deviceId: 0x73ff
+	Graphics card #1 versionInfo: DriverVersion=32.0.11021.1011
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 38560.58
+	Virtual memory used (MB): 26389.35
+	Swap memory total (MB): 6656.00
+	Swap memory used (MB): 78.63
+	JVM Flags: 1 total; -Xmx10G
+	Fabric Mods: 
+		balm-fabric: Balm 7.3.9
+			kuma_api: KumaAPI 20.1.8
+		bclib: BCLib 3.0.14
+			wunderlib: WunderLib 1.1.5
+		betterend: Better End 4.0.11
+		betternether: Better Nether 9.0.10
+		bookshelf: Bookshelf 20.2.13
+		cloth-config: Cloth Config v11 11.1.106
+			cloth-basic-math: cloth-basic-math 0.6.1
+		collective: Collective 7.84
+		controlify: Controlify 1.6.0+1.20
+			dev_isxander_sdl2-jni: sdl2-jni 2.28.2-26
+			org_hid4java_hid4java: hid4java 0.7.0
+			org_quiltmc_quilt-json5: quilt-json5 1.0.3
+		create: Create 0.5.1-f-build.1417+mc1.20.1
+			com_electronwill_night-config_core: core 3.6.6
+			com_electronwill_night-config_toml: toml 3.6.6
+			com_google_code_findbugs_jsr305: jsr305 3.0.2
+			forgeconfigapiport: Forge Config API Port 8.0.0
+			milk: Milk Lib 1.2.60
+				dripstone_fluid_lib: Dripstone Fluid Lib 3.0.2
+			porting_lib_tags: Porting Lib Tags 3.0
+			reach-entity-attributes: Reach Entity Attributes 2.4.0
+			registrate-fabric: Registrate for Fabric 1.3.62-MC1.20.1
+		debugify: Debugify 1.20.1+2.0
+		e4mc_minecraft: e4mc 4.0.1
+		fabric-api: Fabric API 0.92.2+1.20.1
+			fabric-api-base: Fabric API Base 0.4.31+1802ada577
+			fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.36+1802ada577
+			fabric-biome-api-v1: Fabric Biome API (v1) 13.0.13+1802ada577
+			fabric-block-api-v1: Fabric Block API (v1) 1.0.11+1802ada577
+			fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.1+1802ada577
+			fabric-command-api-v1: Fabric Command API (v1) 1.2.34+f71b366f77
+			fabric-command-api-v2: Fabric Command API (v2) 2.2.13+1802ada577
+			fabric-commands-v0: Fabric Commands (v0) 0.2.51+df3654b377
+			fabric-containers-v0: Fabric Containers (v0) 0.1.64+df3654b377
+			fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.11+1802ada577
+			fabric-convention-tags-v1: Fabric Convention Tags 1.5.5+1802ada577
+			fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.19+1802ada577
+			fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.0+de0fd6d177
+			fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.4+1802ada577
+			fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.54+1802ada577
+			fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.0+1c78457f77
+			fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.2+1802ada577
+			fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.63+df3654b377
+			fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.40+1802ada577
+			fabric-item-api-v1: Fabric Item API (v1) 2.1.28+1802ada577
+			fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.12+1802ada577
+			fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.22+1802ada577
+			fabric-loot-api-v2: Fabric Loot API (v2) 1.2.1+1802ada577
+			fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.45+9e7660c677
+			fabric-message-api-v1: Fabric Message API (v1) 5.1.9+1802ada577
+			fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.50+1802ada577
+			fabric-networking-api-v1: Fabric Networking API (v1) 1.3.11+1802ada577
+			fabric-networking-v0: Fabric Networking (v0) 0.3.51+df3654b377
+			fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.3+1802ada577
+			fabric-particles-v1: Fabric Particles (v1) 1.1.2+1802ada577
+			fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.21+1802ada577
+			fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.3+1802ada577
+			fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.37+92a0d36777
+			fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.28+1802ada577
+			fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.8+1802ada577
+			fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.10+1802ada577
+			fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.30+1802ada577
+			fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.5+8dd72ea377
+			fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.1+1802ada577
+		fabric-language-kotlin: Fabric Language Kotlin 1.10.10+kotlin.1.9.10
+			org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 1.9.10
+			org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 1.9.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 1.9.10
+			org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 1.9.10
+			org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.22.0
+			org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.7.3
+			org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.7.3
+			org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.4.0
+			org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.6.0
+			org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.6.0
+			org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.6.0
+		fabricloader: Fabric Loader 0.16.5
+			mixinextras: MixinExtras 0.4.1
+		fancymenu: FancyMenu 3.2.3
+			com_github_keksuccino_japng: japng 0.5.3
+			com_github_rtyley_animated-gif-lib-for-java: animated-gif-lib-for-java animated-gif-lib-1.7
+		ferritecore: FerriteCore 6.0.0
+		java: Java HotSpot(TM) 64-Bit Server VM 22
+		konkrete: Konkrete 1.8.1
+		lithium: Lithium 0.11.2
+		melody: Melody 1.0.3
+		memoryleakfix: Memory Leak Fix 1.1.2
+		minecraft: Minecraft 1.20.1
+		mixintrace: MixinTrace 1.1.1+1.17
+		modernfix: ModernFix 5.8.1+mc1.20.1
+		netherportalfix: NetherPortalFix 13.0.1
+		nochatreports: No Chat Reports 1.20.1-v2.2.2
+		notenoughanimations: NotEnoughAnimations 1.7.6
+		porting_lib: Porting Lib 2.3.4+1.20.1
+			porting_lib_accessors: Porting Lib Accessors 2.3.4+1.20.1
+			porting_lib_asm: Porting Lib ASM 2.3.4+1.20.1
+			porting_lib_attributes: Porting Lib Attributes 2.3.4+1.20.1
+			porting_lib_base: Porting Lib Base 2.3.4+1.20.1
+			porting_lib_blocks: Porting Lib Blocks 2.3.4+1.20.1
+			porting_lib_brewing: Porting Lib Brewing 2.3.4+1.20.1
+			porting_lib_chunk_loading: Porting Lib Chunk Loading 2.3.4+1.20.1
+			porting_lib_client_events: Porting Lib Client Events 2.3.4+1.20.1
+			porting_lib_common: Porting Lib Common 2.3.4+1.20.1
+			porting_lib_config: Porting Lib Config 2.3.4+1.20.1
+			porting_lib_core: Porting Lib Core 2.3.4+1.20.1
+			porting_lib_data: Porting Lib Data 2.3.4+1.20.1
+			porting_lib_entity: Porting Lib Entity 2.3.4+1.20.1
+			porting_lib_extensions: Porting Lib Extensions 2.3.4+1.20.1
+			porting_lib_fluids: Porting Lib Fluids 2.3.4+1.20.1
+			porting_lib_gametest: Porting Lib GameTest 2.3.4+1.20.1
+			porting_lib_gui_utils: Porting Lib Gui Utils 2.3.4+1.20.1
+			porting_lib_items: Porting Lib Items 2.3.4+1.20.1
+			porting_lib_lazy_registration: Porting Lib Lazy Register 2.3.4+1.20.1
+			porting_lib_level_events: Porting Lib Level Events 2.3.4+1.20.1
+			porting_lib_loot: Porting Lib Loot 2.3.4+1.20.1
+			porting_lib_mixin_extensions: Porting Lib Mixin Extensions 2.3.4+1.20.1
+			porting_lib_model_builders: Porting Lib Model Builders 2.3.4+1.20.1
+			porting_lib_model_generators: Porting Lib Model Generators 2.3.4+1.20.1
+			porting_lib_model_loader: Porting Lib Model Loader 2.3.4+1.20.1
+			porting_lib_model_materials: Porting Lib Model Materials 2.3.4+1.20.1
+			porting_lib_models: Porting Lib Models 2.3.4+1.20.1
+			porting_lib_networking: Porting Lib Networking 2.3.4+1.20.1
+			porting_lib_obj_loader: Porting Lib Obj Loader 2.3.4+1.20.1
+			porting_lib_recipe_book_categories: Porting Lib Recipe Book Categories 2.3.4+1.20.1
+			porting_lib_registries: Porting Lib Registries 2.3.4+1.20.1
+			porting_lib_tool_actions: Porting Lib Tool Actions 2.3.4+1.20.1
+			porting_lib_transfer: Porting Lib Transfer 2.3.4+1.20.1
+			porting_lib_utility: Porting Lib Utility 2.3.4+1.20.1
+		skinlayers3d: 3d-Skin-Layers 1.6.7
+		skinrestorer: SkinRestorer 2.0.3+1.20
+		tectonic: Tectonic 2.4.1b
+		terralith: Terralith 2.5.4
+		treeharvester: Tree Harvester 9.1
+		veinminermod: VeinminerMod 1.20.1-1.0
+		voicechat: Simple Voice Chat 1.20.1-2.5.22
+		waystones: Waystones 14.1.5
+		xaerominimap: Xaero's Minimap 24.4.0
+		xaeroworldmap: Xaero's World Map 1.39.0
+		yet_another_config_lib_v3: YetAnotherConfigLib 3.2.1+1.20
+			com_twelvemonkeys_common_common-image: common-image 3.10.0-SNAPSHOT
+			com_twelvemonkeys_common_common-io: common-io 3.10.0-SNAPSHOT
+			com_twelvemonkeys_common_common-lang: common-lang 3.10.0-SNAPSHOT
+			com_twelvemonkeys_imageio_imageio-core: imageio-core 3.10.0-SNAPSHOT
+			com_twelvemonkeys_imageio_imageio-metadata: imageio-metadata 3.10.0-SNAPSHOT
+			com_twelvemonkeys_imageio_imageio-webp: imageio-webp 3.10.0-SNAPSHOT
+			org_quiltmc_parsers_gson: gson 0.2.1
+			org_quiltmc_parsers_json: json 0.2.1
+		yosbr: YOSBR 0.1.2
+	Server Running: true
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, fabric, tectonic/terratonic
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'fabric'
+	Type: Dedicated Server (map_server.txt)

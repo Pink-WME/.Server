@@ -12,6 +12,7 @@
       "show_on_advanced_tooltips": false
     },
     "types": {
+      "cake": {},
       "wood_type": {
         "betternether.nether_reed": true,
         "betternether.stalagnate": true,
@@ -208,8 +209,7 @@
         "traverse.orange_autumnal": true,
         "traverse.yellow_autumnal": true,
         "traverse.fir": true
-      },
-      "cake": {}
+      }
     },
     "entries": {
       "wood_type": {
