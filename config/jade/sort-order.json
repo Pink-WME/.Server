@@ -8,12 +8,14 @@
   "minecraft:armor_stand": null,
   "minecraft:beehive": null,
   "minecraft:block_display": null,
+  "minecraft:block_inventory": null,
   "minecraft:block_states": null,
   "minecraft:brewing_stand": null,
   "minecraft:campfire": null,
   "minecraft:chicken_egg": null,
   "minecraft:chiseled_bookshelf": null,
   "minecraft:command_block": null,
+  "minecraft:container_entity": null,
   "minecraft:crop_progress": null,
   "minecraft:enchantment_power": null,
   "minecraft:energy_storage": null,
@@ -44,5 +46,10 @@
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
   "minecraft:zombie_villager": null,
-  "waystones:waystone": null
+  "polymer:blockstate": null,
+  "polymer:entities": null,
+  "supplementaries:hat_stand": null,
+  "supplementaries:present": null,
+  "supplementaries:safe": null,
+  "toms_trading_network:vending_machine": null
 }

@@ -1,12 +1,12 @@
 
 #Common configuration settings
 [common]
-	#If enabled, hides the config button from the backpack screen
-	keepBackpackOnDeath = false
 	#The amount of slot columns in the backpack inventory.
 	backpackInventorySizeColumns = 9
+	#If enabled, hides the config button from the backpack screen
+	keepBackpackOnDeath = false
 	#The amount of slot rows in the backpack inventory.
-	backpackInventorySize = 1
+	backpackInventorySize = 4
 
 	[common.wandering_trader]
 		#If enabled, hides the config button from the backpack screen
@@ -17,10 +17,10 @@
 		dislikedPlayersCanTrade = false
 		#The amount of time (in ticks) a player has to wait before a Wandering Trader will like them again. If a player gets caught pickpocketing a Wandering Trader, the cooldown will be reset
 		dislikeCooldown = 6000
-		#The chance a Wandering Trader will spawn with a backpack. The chance is interpreted as one out of x, with x being the number given from this config option.
-		wanderingTraderBackpackChance = 2
 		#Instead of generating trades as loot in the Wandering Traders backpacks, only generate emeralds.
 		generateEmeraldsOnly = false
+		#The chance a Wandering Trader will spawn with a backpack. The chance is interpreted as one out of x, with x being the number given from this config option.
+		wanderingTraderBackpackChance = 2
 		#The maximum size of an emerald stack that can generate in the Wandering Trader backpack
 		maxEmeraldStack = 32
 		#The time (in ticks) a Wandering Trader will wait before it decides to forget about a detected player. The Wandering Trader will wait indefinitely if the detected player is within the maximum detection distance.
