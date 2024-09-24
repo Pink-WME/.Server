@@ -12,7 +12,6 @@
       "show_on_advanced_tooltips": false
     },
     "types": {
-      "cake": {},
       "wood_type": {
         "betternether.nether_reed": true,
         "betternether.stalagnate": true,
@@ -77,6 +76,7 @@
         "terrestria.yucca_palm": true,
         "traverse.fir": true
       },
+      "cake": {},
       "leaves_type": {
         "regions_unexplored.bamboo": true,
         "regions_unexplored.golden_larch": true,

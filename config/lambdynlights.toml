@@ -162,6 +162,7 @@ mode = "fast"
 				caterpillar = true
 				rhino = true
 				hippo = true
+				tortoise = true
 
 			[light_sources.settings.entities.ecologics]
 				squirrel = true
@@ -219,6 +220,7 @@ mode = "fast"
 				mauler = true
 				iceologer = true
 				ice_chunk = true
+				rascal = true
 
 			[light_sources.settings.entities.goodall]
 				toucan = true
@@ -375,6 +377,47 @@ mode = "fast"
 
 			[light_sources.settings.entities.steves_vanilla]
 				boggord = true
+
+			[light_sources.settings.entities.hybrid-aquatic]
+				lightfoot_crab = true
+				fried_egg_jellyfish = true
+				moon_jellyfish = true
+				firefly_squid = true
+				cuttlefish = true
+				triggerfish = true
+				stonefish = true
+				cowfish = true
+				rockfish = true
+				sea_urchin = true
+				coconut_crab = true
+				fiddler_crab = true
+				shrimp = true
+				starfish = true
+				sea_cucumber = true
+				needlefish = true
+				moray_eel = true
+				blue_spotted_stingray = true
+				flashlight_fish = true
+				flower_crab = true
+				nudibranch = true
+				hermit_crab = true
+				lionfish = true
+				mauve_stinger = true
+				ghost_crab = true
+				dungeness_crab = true
+				unicorn_fish = true
+				seahorse = true
+				blue_tang = true
+				lobster = true
+				vampire_squid = true
+
+			[light_sources.settings.entities.promenade]
+				lush_creeper = true
+				duck = true
+				sunken_skeleton = true
+
+			[light_sources.settings.entities.spawn]
+				seahorse = true
 
 		[light_sources.settings.block_entities]
 
